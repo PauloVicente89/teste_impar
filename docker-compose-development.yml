@@ -1,0 +1,23 @@
+version: '1.0'
+
+services:
+  impar_api:
+    container_name: impar_api
+    restart: always
+    env_file: ./project/.env
+    build:
+      context: .
+      dockerfile: ./docker/dev/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./project:/project
+    depends_on:
+      juris_db:
+        condition: service_healthy
+    networks:
+      - web_network
+
+networks:
+  web_network:
+    driver: bridge
