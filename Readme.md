@@ -1,10 +1,12 @@
 ### Teste tecnico - ÍMPAR
 
 <h3>Instalação</h3>
-1. git clone "https://github.com/PauloVicente89/teste_impar"<br/>
-2. cd ./teste_impar<br/>
-3. Renomeie o arquivo '.env-example' para '.env'<br/>
-4. docker-compose -f ./docker-compose-development.yml up --build<br/>
+```
+    1. git clone "https://github.com/PauloVicente89/teste_impar"<br/>
+    2. cd ./teste_impar<br/>
+    3. Renomeie o arquivo '.env-example' para '.env'<br/>
+    4. docker-compose -f ./docker-compose-development.yml up --build<br/>
+```
 
 <b>O arquivo '.env-example' não deveria ter credenciais, mas como estamos num ambiente controlado de testes não vejo porque retirar</b>
 
