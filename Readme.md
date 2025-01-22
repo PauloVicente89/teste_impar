@@ -9,7 +9,7 @@
 *<b>O arquivo '.env-example' não deveria ter credenciais, mas como estamos num ambiente controlado de testes não vejo porque retirar</b>*
 
 <h4>Documentação</h4>
-- Para acessar a documentação da API: 'http://localhost:8000/docs/'<br/>
+- Para acessar a documentação da API: <code>http://localhost:8000/docs/</code><br/>
 
 <h4>Credenciais de login</h4>
 *Caso haja algum problema inesperado e o ADMIN não exista, crie usando o comando: 'docker exec -it impar_api python manage.py createsuperuser'*<br/>
