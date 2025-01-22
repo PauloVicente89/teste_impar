@@ -1,12 +1,12 @@
 import base64
 from rest_framework import status
 from rest_framework.response import Response
-from modules.photo.services import create_photo, get_photo_by_id
+from modules.photo.services import PhotoService
 import uuid
 
 def photo_validation(photo_file: str):
     if isinstance(photo_file, str) and _is_valid_uuid(photo_file):
-        photo = get_photo_by_id(photo_file)
+        photo = PhotoService.get_photo_by_id(photo_file)
         if photo:
             return photo
         else:
@@ -14,7 +14,7 @@ def photo_validation(photo_file: str):
     else:
         photo_base64 = _process_photo(photo_file)
         if photo_base64:
-            photo = create_photo(photo_base64)
+            photo = PhotoService.create_photo(photo_base64)
             return photo
         else:
             return Response({"error": "Formato de foto inválido."}, status=status.HTTP_400_BAD_REQUEST)

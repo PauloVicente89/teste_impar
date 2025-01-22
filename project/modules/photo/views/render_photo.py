@@ -1,8 +1,8 @@
 from django.http import JsonResponse
 from rest_framework.views import APIView
-from modules.photo.services import get_photo_by_id
+from modules.photo.services import PhotoService
 
 class RenderPhotoView(APIView):
     def get(self, request, photo_id: str) -> str:
-        photo = get_photo_by_id(photo_id)
+        photo = PhotoService.get_photo_by_id(photo_id)
         return JsonResponse({'base64': photo.base64})
