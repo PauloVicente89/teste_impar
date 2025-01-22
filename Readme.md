@@ -13,7 +13,7 @@
 
 <h3>Credenciais de login</h3>
 
-*<b>Caso haja algum problema inesperado e o ADMIN não exista, crie usando o comando: 'docker exec -it impar_api python manage.py createsuperuser'</b>*<br/>
+*<b>Caso haja algum problema inesperado e o ADMIN não exista, crie usando o comando: <code>docker exec -it impar_api python manage.py createsuperuser</code></b>*<br/>
 
 - Administrador:<br/>
 email: paulo@admin.com<br/>
