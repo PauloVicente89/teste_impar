@@ -44,8 +44,3 @@ class CarView(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-class RenderPhotoView(APIView):
-    def get(self, request, photo_id: int):
-        """Renderiza a foto pelo ID."""
-        photo = get_photo_by_id(photo_id)
-        return JsonResponse({'base64': photo.base64})

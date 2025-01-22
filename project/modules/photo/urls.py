@@ -1,6 +1,6 @@
 from django.urls import path
-from modules.photo.views import CreatePhotoView
+from modules.photo.views import RenderPhotoView
 
 urlpatterns = [
-    path('create/', CreatePhotoView.as_view()),
+    path('view/<uuid:photo_id>/', RenderPhotoView.as_view()),
 ]

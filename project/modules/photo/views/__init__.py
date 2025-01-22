@@ -1,1 +1,1 @@
-from .create import CreatePhotoView
+from .render_photo import RenderPhotoView
