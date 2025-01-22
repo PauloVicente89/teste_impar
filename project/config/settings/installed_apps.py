@@ -8,6 +8,8 @@ INSTALLED_APPS = [
 
     # dependencies
     "rest_framework",
+    "rest_framework_swagger",
+    "drf_yasg",
     "rest_framework_simplejwt",
     "django_extensions",
     'graphene_django',
