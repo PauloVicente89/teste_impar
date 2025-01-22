@@ -11,7 +11,7 @@
 <h3>Documentação</h3>
 - Para acessar a documentação da API: <code>http://localhost:8000/docs/</code><br/>
 
-<h3>Credenciais de login</h3><br/>
+<h3>Credenciais de login</h3>
 
 *<b>Caso haja algum problema inesperado e o ADMIN não exista, crie usando o comando: 'docker exec -it impar_api python manage.py createsuperuser'</b>*<br/>
 
