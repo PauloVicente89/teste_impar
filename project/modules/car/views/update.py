@@ -4,9 +4,11 @@ from modules.car.services import CarService
 from modules.car.serializers import CarSerializer, UpdateCarSerializer
 from modules.car.utils import photo_validation
 from rest_framework.views import APIView
+from rest_framework.permissions import IsAdminUser
 
 class UpdateCarsView(APIView):
     serializer_class = CarSerializer
+    permission_classes = [IsAdminUser]
 
     def get_object(self, car_id: str):
         return CarService.get_car_by_id(car_id)
