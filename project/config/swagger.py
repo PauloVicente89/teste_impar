@@ -8,7 +8,7 @@ api_info = openapi.Info(
     description="Documentação de API",
     contact=openapi.Contact(email="contato@impar.com.br"),
 )
-general_permission = (permissions.IsAdminUser,)
+general_permission = (permissions.AllowAny,)
 general_schema_view = swagger_schema_view(
     info=api_info,
     public = True,
