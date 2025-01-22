@@ -1,7 +1,9 @@
 ### Teste tecnico - ÍMPAR
 
-<h3>Instalação</h3>
+
 <code>
+    <h3>Instalação</h3>
+
     1. git clone "https://github.com/PauloVicente89/teste_impar"<br/>
     2. cd ./teste_impar<br/>
     3. Renomeie o arquivo '.env-example' para '.env'<br/>
