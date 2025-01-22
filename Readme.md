@@ -34,4 +34,5 @@ senha: Senha@123
 <h4>Observações adicionais</h4>
 - A Api foi desenvolvida pensando em ser sólido para o usuário, para isso alguns pontos foram construídos:
 1. Na criação/atualização de carros, a rota aceita tanto o UUID de uma 'photo' válida quanto o próprio arquivo da nova foto enviada através de um form-data
-2. Há um sistema de Autenticação e Autorização já estabelecido, pensando no futuro do projeto
+2. Os arquivos Docker estão identificados como arquivos de desenvolvimento, pensando na segregação para quando for para prod
+3. Há um sistema de Autenticação e Autorização já estabelecido, pensando no futuro do projeto
