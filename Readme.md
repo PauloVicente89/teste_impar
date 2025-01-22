@@ -6,7 +6,7 @@
 3. Renomeie o arquivo '.env-example' para '.env'
 4. docker-compose -f ./docker-compose-development.yml up --build
 
-* O arquivo '.env-example' não deveria ter credenciais, mas como estamos num ambiente controlado de testes, não vejo porque retirar *
+*O arquivo '.env-example' não deveria ter credenciais, mas como estamos num ambiente controlado de testes, não vejo porque retirar*
 
 <h4>Documentação</h4>
 - Para acessar a documentação da API: 'http://localhost:8000/docs/'
@@ -33,6 +33,6 @@ senha: Senha@123
 
 <h4>Observações adicionais</h4>
 - A Api foi desenvolvida pensando em ser sólido para o usuário, para isso alguns pontos foram construídos:
-1. Na criação/atualização de carros, a rota aceita tanto o UUID de uma 'photo' válida quanto o próprio arquivo da nova foto enviada através de um form-data
-2. Os arquivos Docker estão identificados como arquivos de desenvolvimento, pensando na segregação para quando for para prod
-3. Há um sistema de Autenticação e Autorização já estabelecido, pensando no futuro do projeto
+1. Na criação/atualização de carros, a rota aceita tanto o UUID de uma 'photo' válida quanto o próprio arquivo da nova foto enviada através de um form-data <br/>
+2. Os arquivos Docker estão identificados como arquivos de desenvolvimento, pensando na segregação para quando for para prod<br/>
+3. Há um sistema de Autenticação e Autorização já estabelecido, pensando no futuro do projeto<br/>
