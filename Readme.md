@@ -37,6 +37,7 @@ senha: Senha@123<br/><br/>
 
 - Criação de carros:  <code>/api/cars/create/</code><br/>
 - Atualização de carros:  <code>/api/cars/update/<uuid:id>/</code><br/>
+- Remoção de carros:  <code>/api/cars/remove/<uuid:id>/</code><br/>
 
 <h3>Observações adicionais</h3>
 
