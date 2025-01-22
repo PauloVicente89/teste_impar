@@ -9,6 +9,7 @@
 *<b>O arquivo '.env-example' não deveria ter credenciais, mas como estamos num ambiente controlado de testes não vejo porque retirar</b>*
 
 <h3>Documentação</h3>
+
 - Para acessar a documentação da API: <code>http://localhost:8000/docs/</code><br/><br/>
 
 <h3>Credenciais de login</h3>
