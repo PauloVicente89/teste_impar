@@ -3,7 +3,7 @@ import uuid
 
 class Photo(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False, db_index=True)
-    base64 = models.TextField(null=True)
+    base64 = models.ImageField(blank=True, default="")
 
     class Meta:
         db_table = "photos"

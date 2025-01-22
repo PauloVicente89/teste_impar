@@ -1,1 +1,1 @@
-from .car_viewset import CarViewSet
+from .car import CarViewSet
