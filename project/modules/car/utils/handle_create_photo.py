@@ -19,12 +19,12 @@ def photo_validation(photo_file: str):
         else:
             return Response({"error": "Formato de foto inválido."}, status=status.HTTP_400_BAD_REQUEST)
         
-def _is_valid_uuid(value):
+def _is_valid_uuid(value: str) -> bool:
     if uuid.UUID(value):
         return True
     return False
 
-def _process_photo(photo_file):
+def _process_photo(photo_file: str) -> str | None:
     if isinstance(photo_file, bytes) or hasattr(photo_file, 'read'):
         return base64.b64encode(photo_file.read()).decode('utf-8')
     return None
