@@ -36,6 +36,7 @@ senha: Senha@123<br/><br/>
 <h3>Rotas restritas para admins:</h3>
 
 - Criação de carros:  <code>/api/cars/create/</code><br/>
+- Atualização de carros:  <code>/api/cars/update/<uuid:id>/</code><br/>
 
 <h3>Observações adicionais</h3>
 
