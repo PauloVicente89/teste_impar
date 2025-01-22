@@ -1,5 +1,4 @@
-from rest_framework.response import Response
-from rest_framework import status, generics
+from rest_framework import generics
 from modules.car.services import CarService
 from modules.car.serializers import CarSerializer
 from config.pagination import CustomGeneralPagination

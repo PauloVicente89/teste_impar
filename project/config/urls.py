@@ -8,4 +8,5 @@ urlpatterns = [
     path('graphql/', GraphQLView.as_view(graphiql=True)),
     path('api/cars/', include('modules.car.urls')),
     path('api/photo/', include('modules.photo.urls')),
+    path('api/auth/', include('modules.authentication.urls')),
 ]

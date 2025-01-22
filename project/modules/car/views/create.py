@@ -2,11 +2,12 @@ from rest_framework.response import Response
 from rest_framework import status, generics
 from modules.car.services import CarService
 from modules.car.serializers import CarSerializer
-from modules.photo.services import create_photo
 from modules.car.utils import photo_validation
+from config.permissions import IsAdmin
 
 class CreateCarsView(generics.ListAPIView):
     serializer_class = CarSerializer
+    permission_classes = [IsAdmin]
 
     def post(self, request):
         data = request.data.copy()

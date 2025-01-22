@@ -5,8 +5,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+
+    # dependencies
+    "rest_framework",
+    "rest_framework_simplejwt",
+    "django_extensions",
     'graphene_django',
+
+    # local modules
     'modules.photo',
     'modules.car',
+    'modules.users',
+    'modules.authentication',
 ]
