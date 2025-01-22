@@ -18,7 +18,7 @@
 - Administrador:<br/>
 email: paulo@admin.com<br/>
 senha: Senha@123<br/>
-<br/>
+
 - Usuário comum:<br/>
 email: paulo@usuario.com<br/>
 senha: Senha@123<br/>
