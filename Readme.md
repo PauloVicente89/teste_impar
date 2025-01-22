@@ -6,7 +6,7 @@
 3. Renomeie o arquivo '.env-example' para '.env'<br/>
 4. docker-compose -f ./docker-compose-development.yml up --build<br/>
 
-<b>O arquivo '.env-example' não deveria ter credenciais, mas como estamos num ambiente controlado de testes não vejo porque retirar</b>
+*<b>O arquivo '.env-example' não deveria ter credenciais, mas como estamos num ambiente controlado de testes não vejo porque retirar</b>*
 
 <h4>Documentação</h4>
 - Para acessar a documentação da API: 'http://localhost:8000/docs/'<br/>
