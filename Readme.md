@@ -9,7 +9,7 @@
 *<b>O arquivo '.env-example' não deveria ter credenciais, mas como estamos num ambiente controlado de testes não vejo porque retirar</b>*
 
 <h3>Documentação</h3>
-- Para acessar a documentação da API: <code>http://localhost:8000/docs/</code><br/>
+- Para acessar a documentação da API: <code>http://localhost:8000/docs/</code><br/><br/>
 
 <h3>Credenciais de login</h3>
 
@@ -21,7 +21,7 @@ senha: Senha@123<br/>
 
 - Usuário comum:<br/>
 email: paulo@usuario.com<br/>
-senha: Senha@123<br/>
+senha: Senha@123<br/><br/>
 
 
 <h3>GraphQL</h3>
