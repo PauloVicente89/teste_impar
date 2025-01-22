@@ -7,6 +7,8 @@ DATA_DIR = BASE_DIR.parent / 'data' / 'web'
 
 DEBUG = False
 
+DOMAIN = config("DOMAIN")
+
 DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = config("ALLOWED_HOSTS").split(" ")

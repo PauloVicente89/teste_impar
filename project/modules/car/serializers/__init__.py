@@ -1,1 +1,1 @@
-from .serializer import CarSerializer
+from .serializers import CarSerializer, UpdateCarSerializer

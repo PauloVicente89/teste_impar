@@ -1,0 +1,1 @@
+from .handle_create_photo import photo_validation

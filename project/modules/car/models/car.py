@@ -9,8 +9,8 @@ class Car(models.Model):
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     photo_id = models.ForeignKey(Photo, on_delete=models.CASCADE)
-    name = models.CharField(max_length=40, db_index=True)
-    status = models.CharField(choices=Status.choices, default="AVAILABLE", db_index=True)
+    name: str = models.CharField(max_length=40, db_index=True)
+    status: str = models.CharField(choices=Status.choices, default="AVAILABLE", db_index=True)
 
     class Meta:
         db_table = "cars"
