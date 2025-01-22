@@ -1,8 +1,5 @@
-import os
 from pathlib import Path
 from decouple import config
-import os
-from .templates import BASE_DIR
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
@@ -21,9 +18,9 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 MEDIA_URL = "/media/"
 MEDIA_ROOT = "/data/web/media"
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'config.urls'
 
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 DJANGO_ADMIN_URL = config("DJANGO_ADMIN_URL", default="admin/")
 

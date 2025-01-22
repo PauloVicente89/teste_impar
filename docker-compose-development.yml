@@ -12,9 +12,6 @@ services:
       - "8000:8000"
     volumes:
       - ./project:/project
-    depends_on:
-      juris_db:
-        condition: service_healthy
     networks:
       - web_network
 

@@ -1,0 +1,1 @@
+from .create import CreatePhotoView
