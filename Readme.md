@@ -26,15 +26,19 @@ senha: Senha@123<br/><br/>
 
 
 <h3>GraphQL</h3>
+
 - Para acessar ao GraphQL da API: <code>http://localhost:8000/graphql/</code><br/>
 
 <h3>Django ADMIN</h3>
+
 - Para acessar ao Django Admin da API: <code>http://localhost:8000/admin/</code> | <b>Necessário login de Admin</b><br/>
 
 <h3>Rotas restritas para admins:</h3>
+
 - Criação de carros:  <code>/api/cars/create/</code><br/>
 
 <h3>Observações adicionais</h3>
+
 - A Api foi desenvolvida pensando em ser sólido para o usuário, para isso alguns pontos foram construídos:<br/>
 1. Na criação/atualização de carros, a rota aceita tanto o UUID de uma 'photo' válida quanto o próprio arquivo da nova foto enviada através de um form-data <br/>
 2. Os arquivos Docker estão identificados como arquivos de desenvolvimento, pensando na segregação para quando for para prod<br/>
